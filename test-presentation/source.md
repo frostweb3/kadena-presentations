@@ -14,7 +14,7 @@ video_playback_rate: 0.5                        # slow down the video
 slide_bg_is_video: true                         # true to use a darkened version of the video as slide background
 ---
 
-# Styled Pandoc Presentation Template zyyy
+# Styled Pandoc Presentation Template 
 
 Create Kadena-themed presentations from markdown using pandoc
 
