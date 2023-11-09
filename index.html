@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta name="generator" content="pandoc" />
+<meta name="author" content="tasos@kadena.io isa@kadena.io" />
+<meta name="date" content="2023-09-13" />
+<title>Kadena-themed – Styled Pandoc Presentation Template</title>
+<style type="text/css">
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+<link rel="stylesheet" type="text/css" media="screen, projection, print" href="https://www.w3.org/Talks/Tools/Slidy2/styles/slidy.css" />
+<link rel="stylesheet" type="text/css" media="screen, projection, print" href="assets/styles/index.css" />
+<link rel="stylesheet" type="text/css" media="screen, projection, print" href="assets/styles/fonts.css" />
+<link rel="stylesheet" type="text/css" media="screen, projection, print" href="assets/styles/slides.css" />
+<script src="https://www.w3.org/Talks/Tools/Slidy2/scripts/slidy.js" charset="utf-8" type="text/javascript"></script>
+<script>
+    window.showvideo = () => {
+      const video = document.getElementById('video-cover');
+      video.playbackRate = 0.5;
+      video.play();
+      video.style.display = 'block';
+    }
+</script>
+</head>
+<body>
+  
+  <img class="logosig-icon" id="logosig-icon" src="assets/icons/k-internal-icon-alpha.png" />
+
+  <img src="assets/images/bg.png" class="background" />
+
+      <video id="video-cover" loop muted oncanplay="showvideo()">
+          <source src="assets/videos/kd-back.mp4" type="video/mp4" />
+      </video>
+    
+    <div class="slide titlepage">
+                <div class="icons">
+              <img src="assets/icons/k-internal-icon.jpg" alt="Logo" />
+            </div>
+        <div class="container">
+      <h1 class="title">Styled Pandoc Presentation Template</h1>
+                  <p class="author">
+        tasos@kadena.io isa@kadena.io
+      </p>
+                    <p class="date">September 13, 2023</p>
+          </div>
+  </div>
+    
+<div id="styled-pandoc-presentation-template" class="slide section level1">
+<h1>Styled Pandoc Presentation Template</h1>
+<p>Create Kadena-themed presentations from markdown using pandoc</p>
+<ol style="list-style-type: decimal">
+<li>Clone repository</li>
+<li>Install requirements</li>
+<li>run <code>./gen-watch.sh</code></li>
+<li>Write your slides in <code>source.md</code></li>
+<li>Load <code>index.html</code> in a browser</li>
+</ol>
+<p>Optionally: deploy to github pages.</p>
+<p><a href="https://github.com/Takadenoshi/pandoc-presentation-template/">Repository here</a></p>
+</div>
+<div id="requirements" class="slide section level1">
+<h1>Requirements</h1>
+<ul>
+<li><code>./gen.sh</code> requires pandoc.
+<ul>
+<li>You can find instructions on installing pandoc on your machine <a href="https://pandoc.org/installing.html">here</a>.</li>
+</ul></li>
+<li><code>./gen-watch.sh</code> requires nodemon.
+<ul>
+<li>You can install that globally with <code>npm i -g nodemon</code> or <code>yarn global add nodemon</code>.
+<ul>
+<li>Don’t have <code>npm</code>? You can install <a href="https://nodejs.org/en/download">node js</a> to get it.</li>
+</ul></li>
+</ul></li>
+</ul>
+</div>
+<div id="running" class="slide section level1">
+<h1>Running</h1>
+<p>Running <code>./gen.sh</code> will rebuild the target <code>index.html</code>.</p>
+<p>Running <code>./gen-watch.sh</code> will watch the current directory for changes to <code>.md</code> or <code>.slidy</code> files and run <code>gen.sh</code> when any change is detected.</p>
+<p>Running <code>./gen-standalone.sh</code> will create a standalone index.html with all resources inlined, which can be shared as-is.</p>
+</div>
+<div id="presenting" class="slide section level1">
+<h1>Presenting</h1>
+<p>Pandoc supports some keyboard shortcuts while presenting, like <code>s</code> for smaller font size, <code>b</code> for larger, <code>k</code> to disable click-to-forward, <code>c</code> for a table of contents, etc.</p>
+<p>Press <code>h</code> while on the presentation to show a detailed help screen.</p>
+<p>Aside from those you can also press <code>v</code> to hide the video background.</p>
+</div>
+<div id="configuring" class="slide section level1">
+<h1>Configuring</h1>
+<h2 id="markdown-metadata-1">Markdown metadata (1)</h2>
+<p>The header of the source markdown file includes the following variables that can be set. Refer to <code>source.md</code> contents for an example.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Name</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><code>title</code></td>
+<td align="left">Presentation title. Ends up in title slide, page title</td>
+</tr>
+<tr class="even">
+<td align="left"><code>title-prefix</code></td>
+<td align="left">Presentation prefix for html page title</td>
+</tr>
+<tr class="odd">
+<td align="left"><code>author</code></td>
+<td align="left">Ends up in title slide, page meta author</td>
+</tr>
+<tr class="even">
+<td align="left"><code>date</code></td>
+<td align="left">Ends up in title slide, page meta date</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="configuring-1" class="slide section level1">
+<h1>Configuring</h1>
+<h2 id="markdown-metadata-2">Markdown metadata (2)</h2>
+<p>The following <strong>optional</strong> metadata can be used to customize the presentation theme.</p>
+<table>
+<colgroup>
+<col width="29%" />
+<col width="70%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">Name</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><code>background</code></td>
+<td align="left">image background for presentation if <code>video</code> is missing or <code>slide_bg_is_video</code> is <code>false</code></td>
+</tr>
+<tr class="even">
+<td align="left"><code>logosig</code></td>
+<td align="left">“signature” logo at bottom right of each slide</td>
+</tr>
+<tr class="odd">
+<td align="left"><code>icons</code></td>
+<td align="left">List of image sources to show as icons over the title on the title slide.</td>
+</tr>
+<tr class="even">
+<td align="left"><code>video</code></td>
+<td align="left">List of <code>{.src, .type}</code> video sources for the background of the title slide (or presentation)</td>
+</tr>
+<tr class="odd">
+<td align="left"><code>video_playback_rate</code></td>
+<td align="left">custom playback rate for the video</td>
+</tr>
+<tr class="even">
+<td align="left"><code>slide_bg_is_video</code></td>
+<td align="left"><code>true</code> to use the video as presentation background, <code>false</code> to use image instead</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="configuring-2" class="slide section level1">
+<h1>Configuring</h1>
+<p>In case you need to tweak the generated html or stylesheets:</p>
+<h2 id="slidy-template">Slidy template</h2>
+<p>The js slideshow library used is <code>slidy</code>.</p>
+<p>The template file which generates the html is <code>assets/kadena.slidy</code>.</p>
+<h2 id="stylesheets">Stylesheets</h2>
+<p>CSS stylesheets can be tweaked under <code>assets/styles/</code>.</p>
+<p>If you want to pick different colors or tones, please consult the <a href="https://www.figma.com/file/cNQkFOjrqO3PAYv7TSIhpB/Foundation?type=design&amp;node-id=188-869&amp;mode=design&amp;t=5J7YpU6yxy8El0DC-0">Color System</a>.</p>
+</div>
+<div id="pre-commit-hook" class="slide section level1">
+<h1>Pre-commit hook</h1>
+<p>If you need to make sure your <code>index.html</code> is up to date with your source, you can use a pre-commit hook like this:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource bash numberLines"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1"></a><span class="co">#!/usr/bin/env sh</span></span>
+<span id="cb1-2"><a href="#cb1-2"></a></span>
+<span id="cb1-3"><a href="#cb1-3"></a><span class="ex">./gen.sh</span></span>
+<span id="cb1-4"><a href="#cb1-4"></a><span class="fu">git</span> add index.html</span></code></pre></div>
+<p>A sample is provided under <code>/pre-commit.sample</code> which you can copy to <code>.git/hooks/pre-commit</code></p>
+</div>
+<div id="deploying-to-github-pages" class="slide section level1">
+<h1>Deploying to Github pages</h1>
+<p>Deploying this to Github pages is straightforward.</p>
+<ol style="list-style-type: decimal">
+<li>(Fork repo, rename, enter your content, etc)</li>
+<li>Go to GitHub -&gt; Settings -&gt; Pages</li>
+<li>Under “Build and Deployment -&gt; Branch”, select <code>main</code> and click <code>Save</code>.</li>
+</ol>
+<p>Your presentation will be deployed to the URL:</p>
+<p><code>https://&lt;GitHub Username&gt;.github.io/&lt;Repo Name&gt;</code></p>
+<hr />
+<p>If you have moved <code>index.html</code> to a subfolder:</p>
+<ol style="list-style-type: decimal">
+<li>Edit <code>/.github/workflows/static.yml</code></li>
+<li>Locate the <code>jobs.deploy.steps.Upload artifact</code> step (should have a comment “Upload entire repository”.)</li>
+<li>Replace <code>path</code> with the path to your document root.</li>
+</ol>
+</div>
+<div id="writing-pandoc-slides" class="slide section level1">
+<h1>Writing pandoc slides</h1>
+<p>The full pandoc markdown reference can be found <a href="https://pandoc.org/MANUAL.html#pandocs-markdown">here</a>.</p>
+<h2 id="slides-and-headings">Slides and headings</h2>
+<p>Slides are separated by H1 headings <code># My next Slide</code> or three dashes <code>---</code>.</p>
+</div>
+<div id="writing-pandoc-slides-1" class="slide section level1">
+<h1>Writing pandoc slides</h1>
+<h2 id="code-blocks-no-line-numbers">Code blocks, no line numbers</h2>
+<p>Code blocks can have syntax highlighting, e.g.:</p>
+<pre><code>` ` ` javascript
+console.log(&quot;very nice&quot;);
+` ` `</code></pre>
+<p>Produces:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true"></a><span class="bu">console</span><span class="op">.</span><span class="fu">log</span>(<span class="st">&quot;very nice&quot;</span>)<span class="op">;</span></span></code></pre></div>
+<p><em>Note: the backticks above had to be spaced for font rendering purposes. Do not include spaces between backticks in your code.</em></p>
+</div>
+<div id="writing-pandoc-slides-2" class="slide section level1">
+<h1>Writing pandoc slides</h1>
+<h2 id="code-blocks-with-line-numbers">Code blocks, with line numbers</h2>
+<p>If you need line numbers in code blocks, use this invocation:</p>
+<pre><code>` ` ` {.javascript .numberLines}
+console.log(&quot;very&quot;);
+console.log(&quot;nice&quot;);
+` ` `</code></pre>
+<p>Produces:</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode numberSource javascript numberLines"><code class="sourceCode javascript"><span id="cb5-1"><a href="#cb5-1"></a><span class="bu">console</span><span class="op">.</span><span class="fu">log</span>(<span class="st">&quot;very&quot;</span>)<span class="op">;</span></span>
+<span id="cb5-2"><a href="#cb5-2"></a><span class="bu">console</span><span class="op">.</span><span class="fu">log</span>(<span class="st">&quot;nice&quot;</span>)<span class="op">;</span></span></code></pre></div>
+<p><em>Note: the backticks above had to be spaced for font rendering purposes. Do not include spaces between backticks in your code.</em></p>
+</div>
+<div id="writing-pandoc-slides-3" class="slide section level1">
+<h1>Writing pandoc slides</h1>
+<h2 id="columns">Columns</h2>
+<p>To split a slide in two or more columns, you can use this markdown:</p>
+<pre><code>:::::::::::::: {.columns}
+::: {.column width=&quot;80%&quot;}
+## large content to the left
+:::
+::: {.column width=&quot;20%&quot;}
+small content to the right
+:::
+::::::::::::::</code></pre>
+<p>Produces:</p>
+<div class="columns">
+<div class="column" style="width:70%;">
+<h2 id="large-content-to-the-left">large content to the left</h2>
+</div><div class="column" style="width:30%;">
+<p>small content to the right</p>
+</div>
+</div>
+</div>
+<div id="writing-pandoc-slides-4" class="slide section level1">
+<h1>Writing pandoc slides</h1>
+<h2 id="hrs">HRs</h2>
+<p>The usual markdown for a ruler <code>---</code> denotes “new slide” in pandoc</p>
+<p>You can insert a horizontal ruler / HR by using the html tag: <code>&lt;hr /&gt;</code></p>
+<hr />
+</div>
+  
+  <script src="assets/scripts/index.js" charset="utf-8" type="text/javascript"></script>
+</body>
+</html>
